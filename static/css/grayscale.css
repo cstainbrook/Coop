@@ -4,9 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+.navbar-container {
+  margin-left: 5%;
+  margin-right: 0;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
+  line-height: 0.1;
 }
 
 #mainNav .navbar-toggler {
@@ -22,8 +28,22 @@
 
 #mainNav .navbar-brand {
   color: #161616;
-  font-weight: 700;
+  font-weight: 200;
+  font-size: 22px;
   padding: .9rem 0;
+}
+
+#mainNav .navbar-brand .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav {
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  right: 5%;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -54,6 +74,8 @@
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
+    font-weight: 200;
+    font-size: 22px;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
@@ -92,20 +114,27 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/flock-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/flock-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
+.header-text {
+  position: absolute;
+  right: 13%;
+  bottom: 18%;
+}
+
 .masthead h1 {
-  font-family: 'Varela Round';
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: #dbdbdb;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -142,7 +171,8 @@
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Varela Round';
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  font-weight: 200;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -185,9 +215,13 @@
 }
 
 @media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+  .projects-section .featured-text-right {
+    padding: 2rem 2rem 2rem 2rem;
+    border-right: 0.3rem solid #64a19d;
+  }
+  .projects-section .featured-text-left {
+    padding: 2rem 2rem 2rem 2rem;
+    border-left: 0.3rem solid #64a19d;
   }
 }
 
@@ -222,7 +256,8 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Varela Round';
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  font-weight: 200;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -236,11 +271,13 @@
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
+  background-color: #212529;
 }
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Varela Round';
+  font-family: 'Playfair Disply' serif;
+  font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -274,7 +311,8 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: 'helvetica neue', helvetica, sans-serif;
+  font-weight: 200;
   letter-spacing: 0.0625em;
 }
 
@@ -301,4 +339,8 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+.contact-icon {
+  font-size: 4rem
 }
